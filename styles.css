@@ -242,6 +242,10 @@ body {
 }
 
 /*Poetry House Styles*/
+#poetryHouseTitle {
+    margin-bottom: 0px;
+}
+
 #poetryRequest {
     display: flex;
     flex-direction: column;
