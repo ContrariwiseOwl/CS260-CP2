@@ -94,8 +94,17 @@ document.getElementById("poetryRequestSubmit").addEventListener("click", functio
 
             document.getElementById("poetryHouse").innerHTML = results;
             document.getElementById("poetryHouse").style.display = "flex";
+            document.getElementById("resetButton").style.display = "inline-block";
             document.getElementById("poetryRequest").style.display = "none";
+            document.getElementById("poetryHouseTitle").style.display = "none";
         }).catch(function(reason) {
             console.log("Error explained: " + reason);
         })
-})
+});
+
+document.getElementById("resetButton").addEventListener("click", function(event) {
+    document.getElementById("poetryHouse").style.display = "none";
+    document.getElementById("resetButton").style.display = "none";
+    document.getElementById("poetryRequest").style.display = "flex";
+    document.getElementById("poetryHouseTitle").style.display = "flex";
+});
