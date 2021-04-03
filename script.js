@@ -74,14 +74,27 @@ document.getElementById("poetryRequestSubmit").addEventListener("click", functio
         }).then(function(json) {
             console.log(json);
             let results = "";
+            results += '<h2>Returned ' + json.length + ' Poem(s)</h2>';
 
             for (let i = 0; i < json.length; i++) {
-                results += '<div class='
+                results += '<div class="poem">';
+
+                results += '<p><strong>' + json[i].title + "</strong> by " + json[i].author + '</p>';
+
+                results += '<div class="stanza"><ul>';
+                for (let k = 0; k < json[i].lines.length; k++) {
+                    results += '<li>' + json[i].lines[k] + '</li>';
+                }
+                results += '</ul></div>';
+
+                results += '</div>';
+
+                if (i < json.length - 1) results += '<hr/>';
             }
 
             document.getElementById("poetryHouse").innerHTML = results;
             document.getElementById("poetryHouse").style.display = "flex";
-            document.getElementById("poetryRequest").style.diplay = "none";
+            document.getElementById("poetryRequest").style.display = "none";
         }).catch(function(reason) {
             console.log("Error explained: " + reason);
         })
