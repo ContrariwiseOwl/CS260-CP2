@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.nav-link, .dropdown-item, .navbar-text {
+    font-family: 'Merriweather', serif;
+}
+
+.bg-light {
+    background-color: #f4c983 !important;
+}
+
+.navbar-text {
+    margin-left: auto;
+}
+
+.background-page {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.main-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.1em;
+    color: rgb(46, 46, 46);
+}
+
+.logo-box > img {
+    width: 100%;
+}
+
+.daily-poem, .falling-poem {
+    padding: 1.6em 1.2em;
+}
+
+.daily-poem > .stanza {
+    align-self: flex-start;
+}
+
+.daily-poem > a {
+    align-self: flex-start;
+    color:rgb(245, 4, 4);
+}
+
+.daily-poem > a:visited {
+    color: rgb(245, 4, 4);
+}
+
+.poem {
+    font-family: 'Kanit', sans-serif;
+}
+
+.welcome {
+    margin-top: 1.4em;
+    margin-bottom: 1.4em;
+    padding: 1em 1.2em;
+}
+
+.resources {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #91a091;
+}
+
+.resource {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    margin-top: 1em;
+    font-size: 0.86em;
+}
+
+.resource a {
+    color: black;
+}
+
+.resource a:visited {
+    color: black;
+}
+
+.resource > h6 {
+    font-size: 1.1em;
+    color: rgb(170, 13, 13);
+}
+
+.resource > ul {
+    margin-bottom: 5px;
+}
+
+.resource > ul, .stanza > ul {
+    list-style: none;
+}
+
+.poem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.poem > .poem-body {
+    text-align: center;
+    font-style: italic;
+    line-height: 1.1em;
+}
+
+.github {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 1.5em;
+}
+
+/*What is Poetry page Styles*/
+.mini-logo-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.mini-logo-title > h1 {
+    align-self: center;
+    justify-self: flex-end;
+}
+
+.what-is-discussion {
+    padding: 2em 1.2em;
+}
+
+.what-is-discussion > h6 {
+    text-align: right;
+}
+
+/*Great Poets Styles*/
+.poet-bio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.poet-bio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 1em 0.3em;
+    background-color: rgb(243, 243, 243);
+    border-radius: 22px 22px;
+}
+
+.poet-bio > h3 {
+    margin-bottom: 12px;
+}
+
+.poet-bio p {
+    padding: 0.8em 0em;
+}
+
+.poet-bio p, .poet-bio ul {
+    font-size: 0.8em;
+}
+
+.poet-profile {
+    width: 66%;
+    border-radius: 10px 10px;
+    margin-bottom: 10px;
+}
+
+.poet-bio-text {
+    width: 88%;
+}
+
+.famous-works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.famous-works ul {
+    width: 50%;
+}
+
+/*Login Styles*/
+
+
+.login-block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    border: black 1px solid;
+    margin: 3em 1em;
+}
+
+.login-block > h6, .login-block > input {
+    margin: 0px 0.6em;
+}
+
+.login-block > h6 {
+    margin-top: 20px;
+    margin-bottom: 2px;
+    padding-left: 3px;
+}
+
+.login-block > input {
+    border-radius: 7px 7px;
+}
+
+.login-block > button {
+    align-self: center;
+    margin-top: 10px;
+    border-radius: 7px 7px;
+    padding: 2px;
+    font-size: 0.9em;
+
+}
+
+/*Mobile Styles*/
+@media only screen and (max-width: 400px) {
+    .mini-logo-title > h1 {
+        padding-bottom: 1em;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/*Tablet Styles*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .welcome {
+        max-width: 800px;
+    }
+    
+    .resources {
+        height: 150px;
+    }
+
+    .resource {
+        width: 33.3%;
+    }
+
+    .mini-logo-title {
+        height: fit-content;
+    }
+
+    .mini-logo-title > img {
+        width: 36%;
+    }
+
+    .mini-logo-title > h1 {
+        width: 63%;
+        text-align: center;
+    }
+
+    .poet-bio {
+        width: 400px;
+        height: 420px;
+    }
+
+    .poet-bio > h3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .poet-profile {
+        width: 110px;
+    }
+
+    .login-page {
+        height: 100%;
+    }
+
+    .login-block {
+        max-width: 400px;
+    }
+
+    .login-footer {
+        margin-top: auto;
+    }
+
+    .login-subpage {
+        height: 100%;
+    }
+}
+
+/*Desktop Styles*/
+@media only screen and (min-width: 961px) {
+    .main-page {
+        width: 960px;
+    }
+
+    .welcome {
+        max-width: 800px;
+    }
+
+    .resources {
+        height: 150px;
+    }
+
+    .resource {
+        width: 33.3%;
+    }
+
+    .mini-logo-title {
+        height: fit-content;
+    }
+
+    .mini-logo-title > img {
+        width: 45%;
+    }
+
+    .poet-bio {
+        width: 400px;
+        height: 420px;
+    }
+
+    .poet-bio > h3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .poet-profile {
+        width: 110px;
+    }
+
+    .mini-logo-title > h1 {
+        width: 54%;
+        text-align: center;
+    }
+
+    .login-page {
+        height: 100%;
+    }
+
+    .login-block {
+        max-width: 400px;
+    }
+
+    .login-footer {
+        margin-top: auto;
+    }
+
+    .login-subpage {
+        height: 100%;
+    }
+}
