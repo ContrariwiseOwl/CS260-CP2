@@ -74,7 +74,8 @@ document.getElementById("poetryRequestSubmit").addEventListener("click", functio
         }).then(function(json) {
             console.log(json);
             let results = "";
-            results += '<h2>Returned ' + json.length + ' Poem(s)</h2>';
+            if (json.length === undefined) results += '<h2>Invalid Search</h2>';
+            else results += '<h2>Returned ' + json.length + ' Poem(s)</h2>';
 
             for (let i = 0; i < json.length; i++) {
                 results += '<div class="poem">';
