@@ -352,6 +352,10 @@ hr {
         padding-left: 1.8em;
         padding-right: 1.8em;
     }
+
+    #poetryRequest {
+        max-width: 550px;
+    }
 }
 
 /*Desktop Styles*/
@@ -418,5 +422,9 @@ hr {
     #dailyPoem ul {
         padding-left: 2.5em;
         padding-right: 2.5em;
+    }
+
+    #poetryRequest {
+        max-width: 550px;
     }
 }

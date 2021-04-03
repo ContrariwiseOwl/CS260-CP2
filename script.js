@@ -79,7 +79,7 @@ document.getElementById("poetryRequestSubmit").addEventListener("click", functio
             for (let i = 0; i < json.length; i++) {
                 results += '<div class="poem">';
 
-                results += '<p><strong>' + json[i].title + "</strong> by " + json[i].author + '</p>';
+                results += '<p><strong>' + json[i].title + "</strong> by " + json[i].author + ", " + json[i].linecount + ' lines</p>';
 
                 results += '<div class="stanza"><ul>';
                 for (let k = 0; k < json[i].lines.length; k++) {
